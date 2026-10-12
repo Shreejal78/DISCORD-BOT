@@ -68,3 +68,5 @@ async def on_member_join(member):
 if __name__ == "__main__":
     keep_alive()
     client.run(TOKEN)
+
+#finall
