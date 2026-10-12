@@ -21,8 +21,9 @@ def home():
     return "PASA ESPORTS Bot is active and running!"
 
 def run_web():
-    port = int(os.getenv("PORT", 8080))
+    port = int(os.getenv("PORT", 10000))
     app.run(host="0.0.0.0", port=port)
+    
 
 def keep_alive():
     t = Thread(target=run_web, daemon=True)
